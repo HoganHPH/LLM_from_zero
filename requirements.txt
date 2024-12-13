@@ -1,5 +1,4 @@
-pytorch
-transformer
+transformers
 datasets
 evaluate
 accelerate

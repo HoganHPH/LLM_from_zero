@@ -83,3 +83,5 @@ trainer = Trainer(
 
 trainer.train()
 
+trainer.push_to_hub()
+
