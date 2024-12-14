@@ -53,3 +53,4 @@ wandb/
 .env
 runs/
 my_first_model/
+my_first_translation_model/
