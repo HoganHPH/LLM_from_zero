@@ -6,7 +6,12 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, DataCollatorWithPadding, AutoModelForSequenceClassification, TrainingArguments, Trainer
 
 # Load dataset with the subset of 10000 samples
-glue = load_dataset("nyu-mll/glue", "qqp", split="train[:5000]")
+glue = load_dataset("nyu-mll/glue", "qqp", split="train")
+glue = glue.remove_columns("idx")
+glue = glue.shuffle(seed=123)
+glue = glue.select(range(10000))
+
+print(glue['label'][:10])
 
 # Train-Test split
 glue = glue.train_test_split(test_size=0.2)
@@ -23,7 +28,7 @@ tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
 # Preprocess function
 def preprocess_function(examples):
-    return tokenizer(examples['question1'], examples['question2'], truncation=True, padding=True, max_length=512)
+    return tokenizer(examples['question1'], examples['question2'], truncation=True, padding=True, max_length=1024)
 
 # Apply preprocessing to entire dataset
 tokenized_glue = glue.map(preprocess_function, batched=True)
@@ -62,7 +67,7 @@ training_args = TrainingArguments(
     learning_rate=2e-5,
     per_device_train_batch_size=32,
     per_device_eval_batch_size=32,
-    num_train_epochs=5,
+    num_train_epochs=3,
     weight_decay=0.01,
     eval_strategy="epoch",
     save_strategy="epoch",

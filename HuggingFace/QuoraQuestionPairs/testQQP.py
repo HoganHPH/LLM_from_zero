@@ -17,12 +17,16 @@ checkpoint = "google-bert/bert-base-cased"
 # Test inference by pipeline
 #
 
-classifier = pipeline("text-classification", model=checkpoint)
-result = classifier(input_text)
+# classifier = pipeline("text-classification", model=checkpoint)
+# result = classifier(input_text)
+# print(result)
+
+
+
+
+classifier = pipeline("text-classification", model = "textattack/bert-base-uncased-QQP")
+result = classifier("Which city is the capital of France?, Where is the capital of France?")
 print(result)
-
-
-
 
 
 
