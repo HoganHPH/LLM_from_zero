@@ -5,6 +5,20 @@ Where I start my LLM path
 ## HuggingFace
 ### Basic tutorial from HuggingFace docs:
 <ol>
+    <li>18/12/2024: Quora Question Pairs <br>
+        !!! Note*: Another code example for QQP problem
+        <ul> Materials:
+            <li>
+            Guide: <a href='https://www.kaggle.com/code/vabatista/quora-question-pairs-transfer-learning-w-bert'>Kaggle blog: Quora Question Pairs - Transfer learning w/ BERT</a>
+            </li>
+            <li>
+            Dataset: <a href='https://huggingface.co/datasets/quora-competitions/quora'>Quora</a>
+            </li>
+            <li>
+            Model: <a href='https://huggingface.co/google-bert/bert-base-uncased'>Bert-based-uncased</a>
+            </li>
+        </ul> 
+    </li>  
     <li>17/12/2024: Quora Question Pairs <br>
         !!! Note*: There exists a bug in inference -> Will be updated later.
         <ul> Materials:
