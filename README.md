@@ -66,6 +66,28 @@ Where I start my LLM path
 ## LangChain
 ### Basic kickstart LangChain:
 <ol>
+    <li> 18/12/2024: LangChain Semantic Search
+        <ul>
+            <li>Content:
+                <ul>
+                    <li>Load document file</li>
+                    <li>Split document (chunking)</li>
+                    <li>Embed document to vectors</li>
+                    <li>Store vectors (indexing)</li>
+                    <li>Search relative documents</li>
+                </ul>
+            </li>
+            <li>Materials
+                <ul>
+                    <li><a href='https://python.langchain.com/docs/tutorials/retrievers/'>LangChain Semantic Search</a></li>
+                    <li><a href='https://python.langchain.com/docs/concepts/document_loaders/'>Documents loader</a></li>
+                    <li><a href='https://python.langchain.com/docs/concepts/text_splitters/'>Text splitters</a></li>
+                    <li><a href='https://python.langchain.com/docs/concepts/embedding_models/'>Embeddings</a></li>
+                    <li><a href='https://python.langchain.com/docs/concepts/vectorstores/'>Vector stores</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li> 17/12/2024: LangChain x HuggingFace
         <ul>
             <li>API Reference: HuggingFaceEndpoint, HuggingFacePipeline and ChatHuggingFace</li>
