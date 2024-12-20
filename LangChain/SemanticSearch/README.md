@@ -30,7 +30,8 @@
 </ol>
 
 <h2>Update 20/12/2024</h2>
-<b>Key: Connect to MongoDB for Vector Search</b>
+<p><b>Key: Connect to MongoDB for Vector Search</b></p>
+<p><b>Guide: <a href='https://python.langchain.com/docs/tutorials/retrievers/'>Semantic Search</a></b></p>
 <ol>
     Issues:
     <li>

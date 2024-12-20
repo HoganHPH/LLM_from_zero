@@ -1,0 +1,7 @@
+python-dotenv
+langchain-core
+langchain-community
+langchain_huggingface
+langchain-mongodb 
+pypdf
+pymongo
