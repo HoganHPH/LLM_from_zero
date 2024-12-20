@@ -82,11 +82,11 @@ Where I start my LLM path
     <li> 20/12/2024:
         <ul>
             <li>
-                LangChain Classification Function Calling with HuggingFace model <br></br>
+                LangChain Classification Function Calling with HuggingFace model <br>
                 Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Classification'>LangChain and HuggingFace Function Calling</a>
             </li>
             <li>
-                Hands-on LangChain Semantic Search with MongoDB Vector Search
+                Hands-on LangChain Semantic Search with MongoDB Vector Search <br>
                 Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/SemanticSearch'>LangChain and MongoDB Vector Search</a>
             </li>
         </ul>
