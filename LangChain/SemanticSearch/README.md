@@ -29,4 +29,18 @@
     </li>
 </ol>
 
-
+<h2>Update 20/12/2024</h2>
+<b>Key: Connect to MongoDB for Vector Search</b>
+<ol>
+    Issues:
+    <li>
+        Error SSL: Set network access in MongoDB be 0.0.0.0
+    </li>
+    <li>
+        Error when import chain: <br>
+        <code>
+            from langchain.globals import set_debug
+            set_debug(True)
+        </code>
+    </li>
+</ol>
