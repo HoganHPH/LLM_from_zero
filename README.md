@@ -79,6 +79,18 @@ Where I start my LLM path
 ## LangChain
 ### Basic kickstart LangChain:
 <ol>
+    <li> 20/12/2024:
+        <ul>
+            <li>
+                LangChain Classification Function Calling with HuggingFace model <br></br>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Classification'>LangChain and HuggingFace Function Calling</a>
+            </li>
+            <li>
+                Hands-on LangChain Semantic Search with MongoDB Vector Search
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/SemanticSearch'>LangChain and MongoDB Vector Search</a>
+            </li>
+        </ul>
+    </li>
     <li> 18/12/2024: LangChain Semantic Search
         <ul>
             <li>Content:
