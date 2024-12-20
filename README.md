@@ -5,6 +5,19 @@ Where I start my LLM path
 ## HuggingFace
 ### Basic tutorial from HuggingFace docs:
 <ol>
+    <li>20/12/2024: Causal Language Modeling <br>
+        <ul> Materials:
+            <li>
+            Guide: <a href='https://huggingface.co/docs/transformers/tasks/language_modeling'>HuggingFace Task Guides - Causal Language Model</a>
+            </li>
+            <li>
+            Dataset: <a href='https://huggingface.co/datasets/rexarski/eli5_category'>ELI5</a>
+            </li>
+            <li>
+            Model: <a href='https://huggingface.co/distilbert/distilgpt2'>DistilGPT2</a>
+            </li>
+        </ul> 
+    </li>
     <li>18/12/2024: Quora Question Pairs <br>
         !!! Note*: Another code example for QQP problem
         <ul> Materials:
