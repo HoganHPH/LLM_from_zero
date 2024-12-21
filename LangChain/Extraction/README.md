@@ -1,18 +1,9 @@
-<h1>Classify Text into Labels - Function calling</h1>
-
-<ul>
-    Guide:
-    <li><a href='https://python.langchain.com/docs/tutorials/classification/'>LangChain Classification Function Calling</a></li>
-    <li><a href='https://python.langchain.com/docs/integrations/providers/huggingface/'>LangChain HuggingFace</a></li>
-</ul>
-
-
+<h1>Information Extraction - Function calling</h1>
 <p>
     <b>
     Objective: Familiar with Extraction using Function Calling in LangChain. The model used is from HuggingFace checkpoint.
     </b>
 </p>
-
 <h2>Guilds:</h2>
 <ul>
     <li><a href="https://python.langchain.com/docs/tutorials/extraction/">LangChain Extraction</a></li>
