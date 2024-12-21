@@ -5,3 +5,4 @@ langchain_huggingface
 langchain-mongodb 
 pypdf
 pymongo
+transformers

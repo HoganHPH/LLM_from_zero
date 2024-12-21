@@ -92,6 +92,14 @@ Where I start my LLM path
 ## LangChain
 ### Basic kickstart LangChain:
 <ol>
+    <li> 21/12/2024:
+        <ul>
+            <li>
+                LangChain Extraction using Function Calling with HuggingFace model <br>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Extraction'>LangChain and HuggingFace Function Calling for Extraction</a>
+            </li>
+        </ul>
+    </li>
     <li> 20/12/2024:
         <ul>
             <li>
