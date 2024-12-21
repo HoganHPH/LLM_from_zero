@@ -5,6 +5,19 @@ Where I start my LLM path
 ## HuggingFace
 ### Basic tutorial from HuggingFace docs:
 <ol>
+    <li>21/12/2024: Masked Language Modeling <br>
+        <ul> Materials:
+            <li>
+            Guide: <a href='https://huggingface.co/docs/transformers/tasks/masked_language_modeling'>HuggingFace Task Guides - Masked Language Model</a>
+            </li>
+            <li>
+            Dataset: <a href='https://huggingface.co/datasets/rexarski/eli5_category'>ELI5</a>
+            </li>
+            <li>
+            Model: <a href='https://huggingface.co/distilbert/distilroberta-base'>DistilRoBERTa</a>
+            </li>
+        </ul> 
+    </li>
     <li>20/12/2024: Causal Language Modeling <br>
         <ul> Materials:
             <li>
