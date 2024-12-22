@@ -105,6 +105,14 @@ Where I start my LLM path
 ## LangChain
 ### Basic kickstart LangChain:
 <ol>
+    <li> 22/12/2024:
+        <ul>
+            <li>
+                LangChain Chatbot with HuggingFace model <br>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Extraction'>LangChain Chatbot using HuggingFace model</a>
+            </li>
+        </ul>
+    </li>
     <li> 21/12/2024:
         <ul>
             <li>

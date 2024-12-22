@@ -37,7 +37,7 @@ response = chat_model.invoke([HumanMessage(content="What is my name?")])
 print(f"{response.content}\n")
 
 
-### ==> Conclusion: Basic Chatbot fails in remebering conversation history
+### ==> Conclusion: Basic Chatbot fails in remembering conversation history
 ### In Basic Chatbot, need to pass all messages (conversation history) at the same time
 
 response = chat_model.invoke(

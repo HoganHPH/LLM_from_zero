@@ -65,3 +65,36 @@ query = "What's my name?"
 input_messages = [HumanMessage(query)]
 output = app.invoke({"messages": input_messages}, config)
 output["messages"][-1].pretty_print()
+
+# 4.3. Test with another user
+config = {"configurable": {"thread_id": "user_2"}}
+input_messages = [HumanMessage(query)]
+output = app.invoke({"messages": input_messages}, config)
+output["messages"][-1].pretty_print()
+
+# 4.4. Go back with first user
+config = {"configurable": {"thread_id": "user_1"}}
+input_messages = [HumanMessage(query)]
+output = app.invoke({"messages": input_messages}, config)
+output["messages"][-1].pretty_print()
+
+
+###
+### Addition: async function
+###
+"""
+# Async function for node:
+async def call_model(state: MessagesState):
+    response = await chat_model.ainvoke(state["messages"])
+    return {"messages": response}
+
+# Define graph as before:
+workflow = StateGraph(state_schema=MessagesState)
+workflow.add_edge(START, "model")
+workflow.add_node("model", call_model)
+app = workflow.compile(checkpointer=MemorySaver())
+
+# Async invocation:
+output = await app.ainvoke({"messages": input_messages}, config)
+output["messages"][-1].pretty_print()
+"""
