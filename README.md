@@ -109,7 +109,7 @@ Where I start my LLM path
         <ul>
             <li>
                 LangChain Chatbot with HuggingFace model <br>
-                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Extraction'>LangChain Chatbot using HuggingFace model</a>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Chatbot'>LangChain Chatbot using HuggingFace model</a>
             </li>
         </ul>
     </li>
