@@ -6,3 +6,4 @@ langchain-mongodb
 pypdf
 pymongo
 transformers
+langgraph>0.2.27
