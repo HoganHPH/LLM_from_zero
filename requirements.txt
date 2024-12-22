@@ -5,3 +5,4 @@ accelerate
 python-dotenv
 sacrebleu
 rouge_score
+seqeval

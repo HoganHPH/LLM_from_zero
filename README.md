@@ -5,6 +5,19 @@ Where I start my LLM path
 ## HuggingFace
 ### Basic tutorial from HuggingFace docs:
 <ol>
+    <li>22/12/2024: Token Classification - NER <br>
+        <ul> Materials:
+            <li>
+            Guide: <a href='https://huggingface.co/docs/transformers/tasks/token_classification'>HuggingFace Task Guides - Token Classification - NER</a>
+            </li>
+            <li>
+            Dataset: <a href='https://huggingface.co/datasets/leondz/wnut_17'>WNUT 17</a>
+            </li>
+            <li>
+            Model: <a href='https://huggingface.co/distilbert/distilbert-base-uncased'>DistilBERT</a>
+            </li>
+        </ul> 
+    </li>
     <li>21/12/2024: Masked Language Modeling <br>
         <ul> Materials:
             <li>
