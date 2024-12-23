@@ -5,6 +5,19 @@ Where I start my LLM path
 ## HuggingFace
 ### Basic tutorial from HuggingFace docs:
 <ol>
+    <li>23/12/2024: Multiple Choice <br>
+        <ul> Materials:
+            <li>
+            Guide: <a href='https://huggingface.co/docs/transformers/tasks/multiple_choice'>HuggingFace Task Guides - Multiple Choice</a>
+            </li>
+            <li>
+            Dataset: <a href='https://huggingface.co/datasets/allenai/swag'>SWAG</a>
+            </li>
+            <li>
+            Model: <a href='https://huggingface.co/google-bert/bert-base-uncased'>BERT</a>
+            </li>
+        </ul> 
+    </li>
     <li>22/12/2024: Token Classification - NER <br>
         <ul> Materials:
             <li>
