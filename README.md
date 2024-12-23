@@ -122,7 +122,7 @@ Where I start my LLM path
         <ul>
             <li>
                 LangChain Agents with HuggingFace model <br>
-                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Chatbot'>LangChain Agents using HuggingFace model</a>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/Agents'>LangChain Agents using HuggingFace model</a>
             </li>
         </ul>
     </li>
