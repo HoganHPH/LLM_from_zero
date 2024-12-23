@@ -7,3 +7,5 @@ pypdf
 pymongo
 transformers
 langgraph>0.2.27
+tavily-python
+langgraph-checkpoint-sqlite
