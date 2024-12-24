@@ -118,6 +118,14 @@ Where I start my LLM path
 ## LangChain
 ### Basic kickstart LangChain:
 <ol>
+    <li> 24/12/2024:
+        <ul>
+            <li>
+                Retrieval Augmented Generation (RAG) - Part 1 <br>
+                Code: <a href='https://github.com/HoganHPH/LLM_from_zero/tree/main/LangChain/RAG_basic'>Basic RAG Part 1</a>
+            </li>
+        </ul>
+    </li>
     <li> 23/12/2024:
         <ul>
             <li>
