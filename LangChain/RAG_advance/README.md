@@ -2,7 +2,7 @@
 
 <p>
     <b>
-    Objective: Building a basic RAG mechanism.
+    Objective: Building an advanced RAG mechanism.
     </b>
 </p>
 <p>
@@ -16,135 +16,52 @@
 
 <h2>Guilds:</h2>
 <ul>
+    <li><a href="https://python.langchain.com/docs/tutorials/qa_chat_history/">LangChain RAG part 2</a></li>
     <li><a href="https://python.langchain.com/docs/tutorials/rag/">LangChain RAG part 1</a></li>
     <li><a href="https://python.langchain.com/docs/concepts/chat_models/">LangChain Chat model</a></li>
     <li><a href="https://python.langchain.com/docs/integrations/vectorstores/">LangChain Vector store</a></li>
     <li><a href="https://python.langchain.com/docs/integrations/providers/huggingface/">LangChain and HuggingFace</a></li>
 </ul>
-<h2>There are 3 main parts in a basic RAG:</h2>
+<h2>There are 2 main parts in this advanced RAG:</h2>
 <ol>
-  <li>Define a ChatModel</li>
-  <li>Indexing</li>
-  <li>Retrieval and Generation</li>
+  <li>Chain</li>
+  <li>Agents</li>
 </ol>
-<h3>1. Define ChatModel</h3>
-<p>The chat model is built based on the pretrained checkpoint of HuggingFace</p>
-<p>
-  <b>Note*: Prompt Template should be checked carefully. Sample prompt template for this model:</b>
-  <code>
-    <|system|>
-    You are a helpful assistant.<|end|>
-    <|user|>
-    Question?<|end|>
-    <|assistant|>
-  </code>
-</p>
-<h3>2. Indexing</h3>
-<p><b>The objective is to store an embedding vectors database</b></p>
+<h3>1. Chain</h3>
 <ul>
     <li>
-      <b>Step 2.1: Load document</b> <br>
+      <b>Step 1.1: Setup</b> <br>
       <ul>
-        <li>Source: <a href='https://en.wikipedia.org/wiki/History_of_the_United_States'>History of US</a></li>
+        <li>Load Chat Model</li>
+        <li>Load Embedding Model</li>
+        <li>Load Vector Store</li>
       </ul>
     </li>
     <li>
-      <b>Step 2.2: Split document into chunks</b> <br>
+      <b>Step 1.2: Indexing documents</b> <br>
     </li>
     <li>
-      <b>Step 2.3: Embed chunks into embedding vectors</b> <br>
+      <b>Step 1.3: Init a State with LangGraph</b> <br>
     </li>
     <li>
-      <b>Step 2.4: Define vector store</b> <br>
+      <b>Step 1.4: Define a TOOL that creates new retrieval step</b> <br>
     </li>
     <li>
-      <b>Step 2.5: Store the embeddings in vector store</b> <br>
+      <b>Step 1.5: 3 steps to generate a new prompt</b> <br>
+        <ul>
+            <li>a) Generate an AIMessage that may include a tool-call to be sent.</li>
+            <li>b) Execute the retrieval.</li>
+            <li>c) Generate a response using the retrieved content.</li>
+        </ul>
+    </li>
+    <li>
+      <b>Step 1.6: Compile into a signle graph object</b> <br>
+    </li>
+    <li>
+      <b>Step 1.7: Invoke and Show results</b> <br>
     </li>
 </ul>
-<h3>3. Retrieval and Generation</h3>
-<ul>
-    <li>
-      <b>Step 3.1: Create a prompt for RAG</b>
-      <ul>
-        There are 2 ways to create a prompt template for RAG:
-        <li>
-          From LangChain hub:
-          <code>
-            from langchain import hub
-            prompt = hub.pull("rlm/rag-prompt")
-          </code>
-        </li>
-        <li>
-          From available prompt template corresponding to model:
-          <code>
-            template = """
-                  <|system|>
-                  You are a helpful assistant.<|end|>
-                  <|user|>
-                  Based on context, answer the question
-                  Context: {context}
-                  Question: {question}
-                  Helpful Answer:
-                  <|end|>
-                  <|assistant|>
-          """
-          </code>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <b>Step 3.2: Init LangGraph</b>
-      There are 3 things to define:
-      <ul>
-        <li>The state of our application</li>
-        <li>The nodes of our application (i.e., application steps)</li>
-        <li>The "control flow" of our application (e.g., the ordering of the steps)</li>
-      </ul>
-    </li>
-    <li>
-      <b>Step 3.3: Invoke and Show response</b>
-    </li>
-</ul>
-<p>
-  <b>Addition: Stream mode</b> <br>
-  <ul>
-    <li>Chunk</li>
-    <li>Token</li>
-  </ul>
-</p>
-<h2>Additional Advance: Query Analysis</h2>
-<ol>
-    <li>
-      <b>Step 1: Load documents</b>
-    </li>
-    <li>
-      <b>Step 2: Add some metadata to the documents</b>
-    </li>
-    <li>
-      <b>Step 3: Define embeddings</b>
-    </li>
-    <li>
-      <b>Step 4: Update new vector store including new metadata</b>
-    </li>
-    <li>
-      <b>Step 5: Define a ChatModel</b>
-    </li>
-    <li>
-      <b>Step 6: Create a prompt for RAG</b>
-    </li>
-    <li>
-      <b>Step 7: Define a schema for our search query</b>
-    </li>
-    <li>
-      <b>Step 8: Init LangGraph</b> <br>
-      <ul>
-        Note*: !Update something here
-        <li>Update State</li>
-        <li>Create new function query_analysis with tool_call (!remember to call .bind_tools())</li>
-        <li>Update control flow</li>
-      </ul>
-    </li>
-    <li>
-      <b>Step 8: Invoke message and Show results</b>
-    </li>
-</ol>
+<h3>Addtion: Stateful management of chat history</h3>
+<p><b>- To manage multiple conversational turns and threads</b></p>
+<h3>2. Agents</h3>
+<p><b>- Execute multiple retrieval steps in service of a query, or iterate on a single search</b></p>
