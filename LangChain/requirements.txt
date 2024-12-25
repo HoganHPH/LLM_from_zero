@@ -10,3 +10,4 @@ langgraph>0.2.27
 tavily-python
 langgraph-checkpoint-sqlite
 langchain-text-splitters
+beautifulsoup4
