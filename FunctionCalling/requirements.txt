@@ -1,0 +1,13 @@
+python-dotenv
+langchain-core
+langchain-community
+langchain_huggingface
+langchain-mongodb 
+pypdf
+pymongo
+transformers
+langgraph>0.2.27
+tavily-python
+langgraph-checkpoint-sqlite
+langchain-text-splitters
+beautifulsoup4
