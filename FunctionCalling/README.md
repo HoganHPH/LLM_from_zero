@@ -82,11 +82,11 @@
     <li><a href='https://python.langchain.com/docs/how_to/tool_calling/'>How to use chat models to call tools</a></li>
     <li><a href='https://python.langchain.com/docs/how_to/tool_results_pass_to_model/'>How to pass tool outputs to chat models</a></li>
     <li><a href='https://python.langchain.com/v0.1/docs/modules/tools/custom_tools/'>Defining Custom Tools</a></li>
+    <li><a href='https://python.langchain.com/docs/how_to/tool_choice/'>How to force models to call a tool</a></li>
+    <li><a href='https://python.langchain.com/docs/how_to/tool_runtime/'>How to pass run time values to tools</a</li>
 </ul>
 <h2>What's next?</h2>
 <ul>
-    <li><a href='https://python.langchain.com/docs/how_to/tool_choice/'>How to force models to call a tool</a></li>
-    <li><a href='https://python.langchain.com/docs/how_to/tool_runtime/'>How to pass run time values to tools</a</li>
     <li><a href='https://langchain-ai.github.io/langgraph/tutorials/introduction/'>LangGraph Quickstart</a</li>
 </ul>
 
