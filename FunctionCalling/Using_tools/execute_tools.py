@@ -12,18 +12,10 @@ Docs:
 """
 
 ### ============================================================================================
-### 2) Tool Calling
+### 3) Tool Execution
+### Execute the tool function and return results of the called function
 ### ============================================================================================
 
-"""
-Docs:
-    - If tool calls are included in a LLM response, they are attached to the corresponding 
-    message or message chunk as a list of tool call objects in the .tool_calls attribute.
-"""
-
-""" Note*:
-    - Chat models can call multiple tools at once
-"""
 
 from langchain_core.tools import tool
 
@@ -47,23 +39,27 @@ def add(a: int, b: int) -> int:
 
 
 tools = [multiply, add]
-print(tools)
+# print(tools)
 
 ### Define Chat model
 
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
-### OpenAI
 os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY")
+
 from langchain_openai import ChatOpenAI
+
 llm = ChatOpenAI(model="gpt-4o-mini")
 
-### MistralAI
 # from langchain_mistralai import ChatMistralAI
+
 # llm = ChatMistralAI(model="mistral-large-latest")
 
+# response = llm.invoke("Hello, my name is Hoang")
+# print(response)
 
 ### Bind the tools into the chat model
 llm_with_tools = llm.bind_tools(tools)
@@ -74,6 +70,14 @@ query = "What is 3 * 12? Also, what is 11 + 49?"
 
 response = llm_with_tools.invoke(query)
 
-print(response)
-print()
-print(response.tool_calls)
+returned_tools = response.tool_calls
+if len(returned_tools) > 0:
+    for tool in returned_tools:
+        # print(tool['name'])
+        args = tool['args']
+        # print(args)
+        matching_tool= [t for t in tools if t.name == tool['name']]
+        response = matching_tool[0].invoke(args)
+        print(response)
+else:
+    print("No tool call")

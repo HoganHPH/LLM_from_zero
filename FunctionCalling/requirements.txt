@@ -11,3 +11,5 @@ tavily-python
 langgraph-checkpoint-sqlite
 langchain-text-splitters
 beautifulsoup4
+langchain-openai
+langchain_mistralai

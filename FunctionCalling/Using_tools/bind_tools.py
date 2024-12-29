@@ -7,7 +7,8 @@ Docs:
 
     1) Tool Binding;
     2) Tool Calling;
-    3) Tool Excecution, 
+    3) Tool Excecution;
+    4) Pass tool outputs to Chat model;
 """
 
 ### ============================================================================================
