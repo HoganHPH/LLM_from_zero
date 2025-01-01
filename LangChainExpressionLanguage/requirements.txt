@@ -1,1 +1,4 @@
 langchain-core
+langchain-community
+langchain_huggingface
+langchain_openai
